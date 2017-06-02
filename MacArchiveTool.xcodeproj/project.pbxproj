@@ -1,0 +1,627 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3A40FC211ED46AE00016299D /* DownloadTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A40FC201ED46AE00016299D /* DownloadTool.m */; };
+		3A4EF3BC1ED3240D00C599D6 /* NetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A4EF3BB1ED3240D00C599D6 /* NetworkManager.m */; };
+		3A4EF3BF1ED3242600C599D6 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A4EF3BE1ED3242600C599D6 /* CFNetwork.framework */; };
+		3A4EF3C21ED330BE00C599D6 /* FTPTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A4EF3C11ED330BE00C599D6 /* FTPTool.m */; };
+		3C3BE2221ED5640400B8F6BA /* config.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3C3BE2211ED5640400B8F6BA /* config.plist */; };
+		3C3BE2251ED5649C00B8F6BA /* ConfigModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C3BE2241ED5649C00B8F6BA /* ConfigModel.m */; };
+		3C712D371ED7DB8300A6D471 /* KSNavigationController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3C712D341ED7DB8300A6D471 /* KSNavigationController.mm */; };
+		3C712D421ED7DEA100A6D471 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C712D411ED7DEA100A6D471 /* MainMenu.xib */; };
+		3C712D4B1ED7FF5C00A6D471 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C712D491ED7FF5C00A6D471 /* MainViewController.m */; };
+		3C712D4C1ED7FF5C00A6D471 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C712D4A1ED7FF5C00A6D471 /* MainViewController.xib */; };
+		3C712D501ED8002600A6D471 /* DownloadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C712D4E1ED8002600A6D471 /* DownloadViewController.m */; };
+		3C712D511ED8002600A6D471 /* DownloadViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C712D4F1ED8002600A6D471 /* DownloadViewController.xib */; };
+		3CCD8E8F1ED26C2B008DC25E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CCD8E8E1ED26C2B008DC25E /* AppDelegate.m */; };
+		3CCD8E921ED26C2B008DC25E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CCD8E911ED26C2B008DC25E /* main.m */; };
+		3CCD8E951ED26C2B008DC25E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CCD8E941ED26C2B008DC25E /* ViewController.m */; };
+		3CCD8E971ED26C2B008DC25E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CCD8E961ED26C2B008DC25E /* Assets.xcassets */; };
+		3CCD8E9A1ED26C2B008DC25E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CCD8E981ED26C2B008DC25E /* Main.storyboard */; };
+		3CCD8EAD1ED27C5F008DC25E /* ProjectModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CCD8EAC1ED27C5F008DC25E /* ProjectModel.m */; };
+		3CF4FB241ED29012003DFC26 /* DJActivityIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CF4FB1D1ED29012003DFC26 /* DJActivityIndicator.m */; };
+		3CF4FB251ED29012003DFC26 /* DJBezierPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CF4FB1F1ED29012003DFC26 /* DJBezierPath.m */; };
+		3CF4FB261ED29012003DFC26 /* DJProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CF4FB211ED29012003DFC26 /* DJProgressHUD.m */; };
+		3CF4FB271ED29012003DFC26 /* DJProgressIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CF4FB231ED29012003DFC26 /* DJProgressIndicator.m */; };
+		3CF4FB3F1ED2B2C9003DFC26 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3CF4FB291ED2B2C9003DFC26 /* Info.plist */; };
+		3CF4FB401ED2B2C9003DFC26 /* MJExtensionConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CF4FB2C1ED2B2C9003DFC26 /* MJExtensionConst.m */; };
+		3CF4FB411ED2B2C9003DFC26 /* MJFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CF4FB2E1ED2B2C9003DFC26 /* MJFoundation.m */; };
+		3CF4FB421ED2B2C9003DFC26 /* MJProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CF4FB301ED2B2C9003DFC26 /* MJProperty.m */; };
+		3CF4FB431ED2B2C9003DFC26 /* MJPropertyKey.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CF4FB321ED2B2C9003DFC26 /* MJPropertyKey.m */; };
+		3CF4FB441ED2B2C9003DFC26 /* MJPropertyType.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CF4FB341ED2B2C9003DFC26 /* MJPropertyType.m */; };
+		3CF4FB451ED2B2C9003DFC26 /* NSObject+MJClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CF4FB361ED2B2C9003DFC26 /* NSObject+MJClass.m */; };
+		3CF4FB461ED2B2C9003DFC26 /* NSObject+MJCoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CF4FB381ED2B2C9003DFC26 /* NSObject+MJCoding.m */; };
+		3CF4FB471ED2B2C9003DFC26 /* NSObject+MJKeyValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CF4FB3A1ED2B2C9003DFC26 /* NSObject+MJKeyValue.m */; };
+		3CF4FB481ED2B2C9003DFC26 /* NSObject+MJProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CF4FB3C1ED2B2C9003DFC26 /* NSObject+MJProperty.m */; };
+		3CF4FB491ED2B2C9003DFC26 /* NSString+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CF4FB3E1ED2B2C9003DFC26 /* NSString+MJExtension.m */; };
+		3CF4FB4C1ED2B317003DFC26 /* DataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CF4FB4B1ED2B317003DFC26 /* DataModel.m */; };
+		3CF4FB511ED3D951003DFC26 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CF4FB501ED3D951003DFC26 /* CoreFoundation.framework */; };
+		97029AB017CCBB1BDABF2981 /* libPods-MacArchiveTool.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B41C7A78C2770726F6CCCFDA /* libPods-MacArchiveTool.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		29D086A85A8303DDCAB6FB2C /* Pods-MacArchiveTool.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MacArchiveTool.release.xcconfig"; path = "Pods/Target Support Files/Pods-MacArchiveTool/Pods-MacArchiveTool.release.xcconfig"; sourceTree = "<group>"; };
+		3A40FC1F1ED46AE00016299D /* DownloadTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadTool.h; sourceTree = "<group>"; };
+		3A40FC201ED46AE00016299D /* DownloadTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloadTool.m; sourceTree = "<group>"; };
+		3A4EF3BA1ED3240D00C599D6 /* NetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkManager.h; sourceTree = "<group>"; };
+		3A4EF3BB1ED3240D00C599D6 /* NetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkManager.m; sourceTree = "<group>"; };
+		3A4EF3BE1ED3242600C599D6 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		3A4EF3C01ED330BE00C599D6 /* FTPTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTPTool.h; sourceTree = "<group>"; };
+		3A4EF3C11ED330BE00C599D6 /* FTPTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTPTool.m; sourceTree = "<group>"; };
+		3C3BE2211ED5640400B8F6BA /* config.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = config.plist; sourceTree = "<group>"; };
+		3C3BE2231ED5649C00B8F6BA /* ConfigModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConfigModel.h; sourceTree = "<group>"; };
+		3C3BE2241ED5649C00B8F6BA /* ConfigModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConfigModel.m; sourceTree = "<group>"; };
+		3C712D331ED7DB8300A6D471 /* KSNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSNavigationController.h; sourceTree = "<group>"; };
+		3C712D341ED7DB8300A6D471 /* KSNavigationController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = KSNavigationController.mm; sourceTree = "<group>"; };
+		3C712D3F1ED7DEA100A6D471 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		3C712D401ED7DEA100A6D471 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/MainMenu.strings; sourceTree = "<group>"; };
+		3C712D481ED7FF5C00A6D471 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		3C712D491ED7FF5C00A6D471 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		3C712D4A1ED7FF5C00A6D471 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		3C712D4D1ED8002600A6D471 /* DownloadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadViewController.h; sourceTree = "<group>"; };
+		3C712D4E1ED8002600A6D471 /* DownloadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloadViewController.m; sourceTree = "<group>"; };
+		3C712D4F1ED8002600A6D471 /* DownloadViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DownloadViewController.xib; sourceTree = "<group>"; };
+		3CCD8E8A1ED26C2B008DC25E /* MacArchiveTool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MacArchiveTool.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CCD8E8D1ED26C2B008DC25E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3CCD8E8E1ED26C2B008DC25E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3CCD8E911ED26C2B008DC25E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3CCD8E931ED26C2B008DC25E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = ../ViewController.h; sourceTree = "<group>"; };
+		3CCD8E941ED26C2B008DC25E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = ../ViewController.m; sourceTree = "<group>"; };
+		3CCD8E961ED26C2B008DC25E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3CCD8E991ED26C2B008DC25E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3CCD8E9B1ED26C2B008DC25E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3CCD8EAB1ED27C5F008DC25E /* ProjectModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProjectModel.h; sourceTree = "<group>"; };
+		3CCD8EAC1ED27C5F008DC25E /* ProjectModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProjectModel.m; sourceTree = "<group>"; };
+		3CF4FB1C1ED29012003DFC26 /* DJActivityIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DJActivityIndicator.h; sourceTree = "<group>"; };
+		3CF4FB1D1ED29012003DFC26 /* DJActivityIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DJActivityIndicator.m; sourceTree = "<group>"; };
+		3CF4FB1E1ED29012003DFC26 /* DJBezierPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DJBezierPath.h; sourceTree = "<group>"; };
+		3CF4FB1F1ED29012003DFC26 /* DJBezierPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DJBezierPath.m; sourceTree = "<group>"; };
+		3CF4FB201ED29012003DFC26 /* DJProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DJProgressHUD.h; sourceTree = "<group>"; };
+		3CF4FB211ED29012003DFC26 /* DJProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DJProgressHUD.m; sourceTree = "<group>"; };
+		3CF4FB221ED29012003DFC26 /* DJProgressIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DJProgressIndicator.h; sourceTree = "<group>"; };
+		3CF4FB231ED29012003DFC26 /* DJProgressIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DJProgressIndicator.m; sourceTree = "<group>"; };
+		3CF4FB291ED2B2C9003DFC26 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3CF4FB2A1ED2B2C9003DFC26 /* MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJExtension.h; sourceTree = "<group>"; };
+		3CF4FB2B1ED2B2C9003DFC26 /* MJExtensionConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJExtensionConst.h; sourceTree = "<group>"; };
+		3CF4FB2C1ED2B2C9003DFC26 /* MJExtensionConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJExtensionConst.m; sourceTree = "<group>"; };
+		3CF4FB2D1ED2B2C9003DFC26 /* MJFoundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJFoundation.h; sourceTree = "<group>"; };
+		3CF4FB2E1ED2B2C9003DFC26 /* MJFoundation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJFoundation.m; sourceTree = "<group>"; };
+		3CF4FB2F1ED2B2C9003DFC26 /* MJProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJProperty.h; sourceTree = "<group>"; };
+		3CF4FB301ED2B2C9003DFC26 /* MJProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJProperty.m; sourceTree = "<group>"; };
+		3CF4FB311ED2B2C9003DFC26 /* MJPropertyKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJPropertyKey.h; sourceTree = "<group>"; };
+		3CF4FB321ED2B2C9003DFC26 /* MJPropertyKey.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJPropertyKey.m; sourceTree = "<group>"; };
+		3CF4FB331ED2B2C9003DFC26 /* MJPropertyType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJPropertyType.h; sourceTree = "<group>"; };
+		3CF4FB341ED2B2C9003DFC26 /* MJPropertyType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJPropertyType.m; sourceTree = "<group>"; };
+		3CF4FB351ED2B2C9003DFC26 /* NSObject+MJClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MJClass.h"; sourceTree = "<group>"; };
+		3CF4FB361ED2B2C9003DFC26 /* NSObject+MJClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MJClass.m"; sourceTree = "<group>"; };
+		3CF4FB371ED2B2C9003DFC26 /* NSObject+MJCoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MJCoding.h"; sourceTree = "<group>"; };
+		3CF4FB381ED2B2C9003DFC26 /* NSObject+MJCoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MJCoding.m"; sourceTree = "<group>"; };
+		3CF4FB391ED2B2C9003DFC26 /* NSObject+MJKeyValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MJKeyValue.h"; sourceTree = "<group>"; };
+		3CF4FB3A1ED2B2C9003DFC26 /* NSObject+MJKeyValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MJKeyValue.m"; sourceTree = "<group>"; };
+		3CF4FB3B1ED2B2C9003DFC26 /* NSObject+MJProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MJProperty.h"; sourceTree = "<group>"; };
+		3CF4FB3C1ED2B2C9003DFC26 /* NSObject+MJProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MJProperty.m"; sourceTree = "<group>"; };
+		3CF4FB3D1ED2B2C9003DFC26 /* NSString+MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MJExtension.h"; sourceTree = "<group>"; };
+		3CF4FB3E1ED2B2C9003DFC26 /* NSString+MJExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MJExtension.m"; sourceTree = "<group>"; };
+		3CF4FB4A1ED2B317003DFC26 /* DataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataModel.h; sourceTree = "<group>"; };
+		3CF4FB4B1ED2B317003DFC26 /* DataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataModel.m; sourceTree = "<group>"; };
+		3CF4FB501ED3D951003DFC26 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		79D6362EA98121099B423F7D /* Pods-MacArchiveTool.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MacArchiveTool.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MacArchiveTool/Pods-MacArchiveTool.debug.xcconfig"; sourceTree = "<group>"; };
+		B41C7A78C2770726F6CCCFDA /* libPods-MacArchiveTool.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MacArchiveTool.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3CCD8E871ED26C2B008DC25E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CF4FB511ED3D951003DFC26 /* CoreFoundation.framework in Frameworks */,
+				3A4EF3BF1ED3242600C599D6 /* CFNetwork.framework in Frameworks */,
+				97029AB017CCBB1BDABF2981 /* libPods-MacArchiveTool.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3A4EF3B91ED323F400C599D6 /* FTP */ = {
+			isa = PBXGroup;
+			children = (
+				3A4EF3BA1ED3240D00C599D6 /* NetworkManager.h */,
+				3A4EF3BB1ED3240D00C599D6 /* NetworkManager.m */,
+				3A4EF3C01ED330BE00C599D6 /* FTPTool.h */,
+				3A4EF3C11ED330BE00C599D6 /* FTPTool.m */,
+				3A40FC1F1ED46AE00016299D /* DownloadTool.h */,
+				3A40FC201ED46AE00016299D /* DownloadTool.m */,
+			);
+			path = FTP;
+			sourceTree = "<group>";
+		};
+		3A4EF3BD1ED3242600C599D6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3CF4FB501ED3D951003DFC26 /* CoreFoundation.framework */,
+				3A4EF3BE1ED3242600C599D6 /* CFNetwork.framework */,
+				B41C7A78C2770726F6CCCFDA /* libPods-MacArchiveTool.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3C712D311ED7DB8300A6D471 /* KSNavigationController */ = {
+			isa = PBXGroup;
+			children = (
+				3C712D321ED7DB8300A6D471 /* ObjectiveC */,
+			);
+			path = KSNavigationController;
+			sourceTree = "<group>";
+		};
+		3C712D321ED7DB8300A6D471 /* ObjectiveC */ = {
+			isa = PBXGroup;
+			children = (
+				3C712D331ED7DB8300A6D471 /* KSNavigationController.h */,
+				3C712D341ED7DB8300A6D471 /* KSNavigationController.mm */,
+			);
+			path = ObjectiveC;
+			sourceTree = "<group>";
+		};
+		3CCD8E811ED26C2B008DC25E = {
+			isa = PBXGroup;
+			children = (
+				3CCD8E8C1ED26C2B008DC25E /* MacArchiveTool */,
+				3CCD8E8B1ED26C2B008DC25E /* Products */,
+				3A4EF3BD1ED3242600C599D6 /* Frameworks */,
+				F28F04B18CD0EC7B7F1B00F4 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		3CCD8E8B1ED26C2B008DC25E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3CCD8E8A1ED26C2B008DC25E /* MacArchiveTool.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3CCD8E8C1ED26C2B008DC25E /* MacArchiveTool */ = {
+			isa = PBXGroup;
+			children = (
+				3A4EF3B91ED323F400C599D6 /* FTP */,
+				3CF4FB061ED286AD003DFC26 /* ThirdParty */,
+				3CCD8EA11ED27521008DC25E /* Main */,
+				3CCD8E8D1ED26C2B008DC25E /* AppDelegate.h */,
+				3CCD8E8E1ED26C2B008DC25E /* AppDelegate.m */,
+				3CCD8E961ED26C2B008DC25E /* Assets.xcassets */,
+				3C3BE2211ED5640400B8F6BA /* config.plist */,
+				3CCD8E9B1ED26C2B008DC25E /* Info.plist */,
+				3CCD8E901ED26C2B008DC25E /* Supporting Files */,
+			);
+			path = MacArchiveTool;
+			sourceTree = "<group>";
+		};
+		3CCD8E901ED26C2B008DC25E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3CCD8E911ED26C2B008DC25E /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3CCD8EA11ED27521008DC25E /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				3C712D481ED7FF5C00A6D471 /* MainViewController.h */,
+				3C712D491ED7FF5C00A6D471 /* MainViewController.m */,
+				3C712D4A1ED7FF5C00A6D471 /* MainViewController.xib */,
+				3CCD8E931ED26C2B008DC25E /* ViewController.h */,
+				3CCD8E941ED26C2B008DC25E /* ViewController.m */,
+				3CCD8E981ED26C2B008DC25E /* Main.storyboard */,
+				3CCD8EAA1ED27BFE008DC25E /* Model */,
+				3C712D4D1ED8002600A6D471 /* DownloadViewController.h */,
+				3C712D4E1ED8002600A6D471 /* DownloadViewController.m */,
+				3C712D4F1ED8002600A6D471 /* DownloadViewController.xib */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		3CCD8EAA1ED27BFE008DC25E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3C712D411ED7DEA100A6D471 /* MainMenu.xib */,
+				3CCD8EAB1ED27C5F008DC25E /* ProjectModel.h */,
+				3CCD8EAC1ED27C5F008DC25E /* ProjectModel.m */,
+				3CF4FB4A1ED2B317003DFC26 /* DataModel.h */,
+				3CF4FB4B1ED2B317003DFC26 /* DataModel.m */,
+				3C3BE2231ED5649C00B8F6BA /* ConfigModel.h */,
+				3C3BE2241ED5649C00B8F6BA /* ConfigModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3CF4FB061ED286AD003DFC26 /* ThirdParty */ = {
+			isa = PBXGroup;
+			children = (
+				3C712D311ED7DB8300A6D471 /* KSNavigationController */,
+				3CF4FB281ED2B2C9003DFC26 /* MJExtension */,
+				3CF4FB1B1ED29012003DFC26 /* DJProgressHUD */,
+			);
+			path = ThirdParty;
+			sourceTree = "<group>";
+		};
+		3CF4FB1B1ED29012003DFC26 /* DJProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				3CF4FB1C1ED29012003DFC26 /* DJActivityIndicator.h */,
+				3CF4FB1D1ED29012003DFC26 /* DJActivityIndicator.m */,
+				3CF4FB1E1ED29012003DFC26 /* DJBezierPath.h */,
+				3CF4FB1F1ED29012003DFC26 /* DJBezierPath.m */,
+				3CF4FB201ED29012003DFC26 /* DJProgressHUD.h */,
+				3CF4FB211ED29012003DFC26 /* DJProgressHUD.m */,
+				3CF4FB221ED29012003DFC26 /* DJProgressIndicator.h */,
+				3CF4FB231ED29012003DFC26 /* DJProgressIndicator.m */,
+			);
+			path = DJProgressHUD;
+			sourceTree = "<group>";
+		};
+		3CF4FB281ED2B2C9003DFC26 /* MJExtension */ = {
+			isa = PBXGroup;
+			children = (
+				3CF4FB291ED2B2C9003DFC26 /* Info.plist */,
+				3CF4FB2A1ED2B2C9003DFC26 /* MJExtension.h */,
+				3CF4FB2B1ED2B2C9003DFC26 /* MJExtensionConst.h */,
+				3CF4FB2C1ED2B2C9003DFC26 /* MJExtensionConst.m */,
+				3CF4FB2D1ED2B2C9003DFC26 /* MJFoundation.h */,
+				3CF4FB2E1ED2B2C9003DFC26 /* MJFoundation.m */,
+				3CF4FB2F1ED2B2C9003DFC26 /* MJProperty.h */,
+				3CF4FB301ED2B2C9003DFC26 /* MJProperty.m */,
+				3CF4FB311ED2B2C9003DFC26 /* MJPropertyKey.h */,
+				3CF4FB321ED2B2C9003DFC26 /* MJPropertyKey.m */,
+				3CF4FB331ED2B2C9003DFC26 /* MJPropertyType.h */,
+				3CF4FB341ED2B2C9003DFC26 /* MJPropertyType.m */,
+				3CF4FB351ED2B2C9003DFC26 /* NSObject+MJClass.h */,
+				3CF4FB361ED2B2C9003DFC26 /* NSObject+MJClass.m */,
+				3CF4FB371ED2B2C9003DFC26 /* NSObject+MJCoding.h */,
+				3CF4FB381ED2B2C9003DFC26 /* NSObject+MJCoding.m */,
+				3CF4FB391ED2B2C9003DFC26 /* NSObject+MJKeyValue.h */,
+				3CF4FB3A1ED2B2C9003DFC26 /* NSObject+MJKeyValue.m */,
+				3CF4FB3B1ED2B2C9003DFC26 /* NSObject+MJProperty.h */,
+				3CF4FB3C1ED2B2C9003DFC26 /* NSObject+MJProperty.m */,
+				3CF4FB3D1ED2B2C9003DFC26 /* NSString+MJExtension.h */,
+				3CF4FB3E1ED2B2C9003DFC26 /* NSString+MJExtension.m */,
+			);
+			path = MJExtension;
+			sourceTree = "<group>";
+		};
+		F28F04B18CD0EC7B7F1B00F4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				79D6362EA98121099B423F7D /* Pods-MacArchiveTool.debug.xcconfig */,
+				29D086A85A8303DDCAB6FB2C /* Pods-MacArchiveTool.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3CCD8E891ED26C2B008DC25E /* MacArchiveTool */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3CCD8E9E1ED26C2B008DC25E /* Build configuration list for PBXNativeTarget "MacArchiveTool" */;
+			buildPhases = (
+				CDAE9323711697B4B24BEED8 /* [CP] Check Pods Manifest.lock */,
+				3CCD8E861ED26C2B008DC25E /* Sources */,
+				3CCD8E871ED26C2B008DC25E /* Frameworks */,
+				3CCD8E881ED26C2B008DC25E /* Resources */,
+				F6DCD74272C4FC327B3F2387 /* [CP] Embed Pods Frameworks */,
+				C6CE4221705B5489EC822E3F /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MacArchiveTool;
+			productName = MacArchiveTool;
+			productReference = 3CCD8E8A1ED26C2B008DC25E /* MacArchiveTool.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3CCD8E821ED26C2B008DC25E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = XFX;
+				TargetAttributes = {
+					3CCD8E891ED26C2B008DC25E = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 3CCD8E851ED26C2B008DC25E /* Build configuration list for PBXProject "MacArchiveTool" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3CCD8E811ED26C2B008DC25E;
+			productRefGroup = 3CCD8E8B1ED26C2B008DC25E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3CCD8E891ED26C2B008DC25E /* MacArchiveTool */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3CCD8E881ED26C2B008DC25E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CCD8E971ED26C2B008DC25E /* Assets.xcassets in Resources */,
+				3C712D511ED8002600A6D471 /* DownloadViewController.xib in Resources */,
+				3C3BE2221ED5640400B8F6BA /* config.plist in Resources */,
+				3CCD8E9A1ED26C2B008DC25E /* Main.storyboard in Resources */,
+				3CF4FB3F1ED2B2C9003DFC26 /* Info.plist in Resources */,
+				3C712D4C1ED7FF5C00A6D471 /* MainViewController.xib in Resources */,
+				3C712D421ED7DEA100A6D471 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C6CE4221705B5489EC822E3F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MacArchiveTool/Pods-MacArchiveTool-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CDAE9323711697B4B24BEED8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F6DCD74272C4FC327B3F2387 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MacArchiveTool/Pods-MacArchiveTool-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3CCD8E861ED26C2B008DC25E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CF4FB401ED2B2C9003DFC26 /* MJExtensionConst.m in Sources */,
+				3A4EF3BC1ED3240D00C599D6 /* NetworkManager.m in Sources */,
+				3CF4FB251ED29012003DFC26 /* DJBezierPath.m in Sources */,
+				3A40FC211ED46AE00016299D /* DownloadTool.m in Sources */,
+				3CF4FB471ED2B2C9003DFC26 /* NSObject+MJKeyValue.m in Sources */,
+				3CCD8E951ED26C2B008DC25E /* ViewController.m in Sources */,
+				3CF4FB241ED29012003DFC26 /* DJActivityIndicator.m in Sources */,
+				3CCD8EAD1ED27C5F008DC25E /* ProjectModel.m in Sources */,
+				3CF4FB491ED2B2C9003DFC26 /* NSString+MJExtension.m in Sources */,
+				3A4EF3C21ED330BE00C599D6 /* FTPTool.m in Sources */,
+				3CF4FB421ED2B2C9003DFC26 /* MJProperty.m in Sources */,
+				3C712D4B1ED7FF5C00A6D471 /* MainViewController.m in Sources */,
+				3CF4FB411ED2B2C9003DFC26 /* MJFoundation.m in Sources */,
+				3C712D371ED7DB8300A6D471 /* KSNavigationController.mm in Sources */,
+				3CF4FB271ED29012003DFC26 /* DJProgressIndicator.m in Sources */,
+				3CF4FB441ED2B2C9003DFC26 /* MJPropertyType.m in Sources */,
+				3CF4FB451ED2B2C9003DFC26 /* NSObject+MJClass.m in Sources */,
+				3CF4FB461ED2B2C9003DFC26 /* NSObject+MJCoding.m in Sources */,
+				3CCD8E921ED26C2B008DC25E /* main.m in Sources */,
+				3CF4FB431ED2B2C9003DFC26 /* MJPropertyKey.m in Sources */,
+				3C712D501ED8002600A6D471 /* DownloadViewController.m in Sources */,
+				3CF4FB481ED2B2C9003DFC26 /* NSObject+MJProperty.m in Sources */,
+				3CF4FB4C1ED2B317003DFC26 /* DataModel.m in Sources */,
+				3CCD8E8F1ED26C2B008DC25E /* AppDelegate.m in Sources */,
+				3CF4FB261ED29012003DFC26 /* DJProgressHUD.m in Sources */,
+				3C3BE2251ED5649C00B8F6BA /* ConfigModel.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3C712D411ED7DEA100A6D471 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3C712D3F1ED7DEA100A6D471 /* Base */,
+				3C712D401ED7DEA100A6D471 /* ar */,
+			);
+			name = MainMenu.xib;
+			path = "../../../../../Downloads/KSNavigationController-master/KSNavigationControllerExample/KSNavigationControllerExample";
+			sourceTree = "<group>";
+		};
+		3CCD8E981ED26C2B008DC25E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3CCD8E991ED26C2B008DC25E /* Base */,
+			);
+			name = Main.storyboard;
+			path = ..;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3CCD8E9C1ED26C2B008DC25E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		3CCD8E9D1ED26C2B008DC25E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		3CCD8E9F1ED26C2B008DC25E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 79D6362EA98121099B423F7D /* Pods-MacArchiveTool.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = MacArchiveTool/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = Seraphic.MacArchiveTool;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3CCD8EA01ED26C2B008DC25E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 29D086A85A8303DDCAB6FB2C /* Pods-MacArchiveTool.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = MacArchiveTool/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = Seraphic.MacArchiveTool;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3CCD8E851ED26C2B008DC25E /* Build configuration list for PBXProject "MacArchiveTool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CCD8E9C1ED26C2B008DC25E /* Debug */,
+				3CCD8E9D1ED26C2B008DC25E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3CCD8E9E1ED26C2B008DC25E /* Build configuration list for PBXNativeTarget "MacArchiveTool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CCD8E9F1ED26C2B008DC25E /* Debug */,
+				3CCD8EA01ED26C2B008DC25E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3CCD8E821ED26C2B008DC25E /* Project object */;
+}

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>DownRootPath</key>
+	<string>/Users/lt-macbookpro/Desktop/OUTFTP/</string>
+	<key>DirRootPath</key>
+	<string>ftp://localhost/Desktop/FTP_Download/</string>
+	<key>FTPServicePath</key>
+	<string>ftp://10.80.3.249/XCode2017525112355/</string>
+	<key>NativeUsername</key>
+	<string>LT-MacbookPro</string>
+	<key>NativePassword</key>
+	<string>abc,123</string>
+	<key>Username</key>
+	<string>testuser</string>
+	<key>Password</key>
+	<string>123456</string>
+</dict>
+</plist>
